@@ -4,6 +4,7 @@ Each note will be referenced by category. This repository won't always have the 
 
 **Cybersecurity**
 [[Pentesting]]
+[[Debuggers]]
 [[Binary Exploitation]]
 [[Forensics Analysis]]
 [[Reverse Engineering]] \*\* Make sure to do diff languages, not just x86 rev

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Directory.md",
+                "file": "Cybersecurity/Binary Exploitation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Directory"
+              "title": "Binary Exploitation"
             }
           }
         ]
@@ -162,13 +162,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "18756e9efbf1b72f",
+  "active": "8254a0d07f12ca21",
   "lastOpenFiles": [
+    "Cybersecurity/Stack_Layout.png",
+    "Directory.md",
+    "Cybersecurity/Debuggers.md",
+    "Cybersecurity/GDB.pdf",
     "Cybersecurity/Pentesting/Pentesting.md",
     "Cybersecurity/Pentesting/Network Enumeration.md",
     "Cybersecurity/Pentesting/Tunnels and Portforwarding.md",
     "Cybersecurity/Pentesting/SMB-Reference.pdf",
-    "Directory.md",
     "Cybersecurity/Binary Exploitation.md",
     "Cybersecurity",
     "Templates/General Topic Template.md",
