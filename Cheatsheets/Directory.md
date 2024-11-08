@@ -9,6 +9,10 @@ Each note will be referenced by category. This repository won't always have the 
 [[Forensics Analysis]]
 [[Reverse Engineering]] \*\* Make sure to do diff languages, not just x86 rev
 
+**General Useful Stuff**
+[tmux](https://tmuxcheatsheet.com/)
+[vim](https://devhints.io/vim)
+
 **Health and Fitness**
 [[Program Design and Periodization]]
 [[Nutrition]]
