@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheets/Directory.md",
+                "file": "Attacking Network Protocols.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Directory"
+              "title": "Attacking Network Protocols"
             }
           }
         ]
@@ -165,8 +165,13 @@
   },
   "active": "e4da198a5c541458",
   "lastOpenFiles": [
+    "Cheatsheets/Cybersecurity/Pentesting/2 - Network/ftp_bounce_attack.webp",
     "Cheatsheets/Cybersecurity/Pentesting/Pentesting.md",
+    "Cheatsheets/Cybersecurity/Pentesting/2 - Network/Network Enumeration with Nmap.md",
+    "Attacking Network Protocols.md",
     "Cheatsheets/Cybersecurity/Pentesting/0 - General/Basic Services and Useful Commands.md",
+    "Cheatsheets/Directory.md",
+    "Cheatsheets/Cybersecurity/Binary Exploitation.md",
     "Cheatsheets/Cybersecurity/Pentesting/0 - General/SMB-Reference.pdf",
     "Cheatsheets/Cybersecurity/Pentesting/0 - General/Shells and Payloads.md",
     "Cheatsheets/Cybersecurity/Pentesting/5 - WiFi",
@@ -178,8 +183,6 @@
     "Cheatsheets/Cybersecurity/Pentesting/0 - General",
     "Cheatsheets/Cybersecurity/Pentesting/4 - Post Exploitation/Tunnels and Portforwarding.md",
     "Cheatsheets/Cybersecurity/Pentesting/0 - General/File Transfers.md",
-    "Cheatsheets/Cybersecurity/Pentesting/2 - Network/Network Enumeration.md",
-    "Cheatsheets/Directory.md",
     "README.md"
   ]
 }
