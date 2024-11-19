@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Attacking Network Applications.md",
+                "file": "Cheatsheets/Cybersecurity/Pentesting/2 - Network/Attacking Network Applications.md",
                 "mode": "source",
                 "source": false
               },
@@ -166,6 +166,7 @@
   "active": "e4da198a5c541458",
   "lastOpenFiles": [
     "Cheatsheets/Cybersecurity/Pentesting/Pentesting.md",
+    "Cheatsheets/Cybersecurity/Pentesting/2 - Network/Attacking Network Applications.md",
     "Attacking Network Applications.md",
     "Attacking Network Protocols.md",
     "Cheatsheets/Cybersecurity/Pentesting/2 - Network/ftp_bounce_attack.webp",
