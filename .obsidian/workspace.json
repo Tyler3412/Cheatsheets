@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheets/Cybersecurity/Pentesting/2 - Network/Attacking Network Applications.md",
+                "file": "Cheatsheets/Cybersecurity/Pentesting/Pentesting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Attacking Network Applications"
+              "title": "Pentesting"
             }
           }
         ]
@@ -165,9 +165,10 @@
   },
   "active": "e4da198a5c541458",
   "lastOpenFiles": [
+    "Web Enumeration.md",
     "Cheatsheets/Cybersecurity/Pentesting/Pentesting.md",
-    "Cheatsheets/Pasted image 20241121095902.png",
     "Cheatsheets/Cybersecurity/Pentesting/2 - Network/Attacking Network Applications.md",
+    "Cheatsheets/Pasted image 20241121095902.png",
     "Cheatsheets/Cybersecurity/Pentesting/0 - General/Shells and Payloads.md",
     "Cheatsheets/Cybersecurity/Pentesting/4 - Post Exploitation/Password Attacks.md",
     "Cheatsheets/Cybersecurity/Pentesting/2 - Network/Attacking Network Protocols.md",
