@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheets/Cybersecurity/Pentesting/Pentesting.md",
+                "file": "Cheatsheets/Cybersecurity/Pentesting/1 - Web/Server Side Attacks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pentesting"
+              "title": "Server Side Attacks"
             }
           }
         ]
@@ -165,8 +165,11 @@
   },
   "active": "e4da198a5c541458",
   "lastOpenFiles": [
-    "Cheatsheets/Cybersecurity/Pentesting/1 - Web/Command Injection Filters.md",
+    "ssrf_exploit_2.webp",
+    "Cheatsheets/Cybersecurity/Pentesting/1 - Web/ssrf_identify_2.webp",
     "Cheatsheets/Cybersecurity/Pentesting/Pentesting.md",
+    "Cheatsheets/Cybersecurity/Pentesting/1 - Web/Server Side Attacks.md",
+    "Cheatsheets/Cybersecurity/Pentesting/1 - Web/Command Injection Filters.md",
     "Cheatsheets/Cybersecurity/Pentesting/1 - Web/File Upload.md",
     "Cheatsheets/Cybersecurity/Pentesting/1 - Web/file_uploads_burp_fuzz_extension.jpg",
     "Cheatsheets/Cybersecurity/Pentesting/1 - Web/File Inclusion.md",
