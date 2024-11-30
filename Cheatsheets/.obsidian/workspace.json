@@ -165,11 +165,13 @@
   },
   "active": "18756e9efbf1b72f",
   "lastOpenFiles": [
-    "Cybersecurity/Pentesting/1 - Web/Pasted image 20241130092307.png",
+    "Cybersecurity/Pentesting/1 - Web/ssrf_exploit_2.webp",
     "Cybersecurity/Pentesting/Pentesting.md",
+    "Directory.md",
+    "Cybersecurity/Pentesting/1 - Web/Server Side Attacks.md",
+    "Cybersecurity/Pentesting/1 - Web/Pasted image 20241130092307.png",
     "File Upload.md",
     "Cybersecurity/Pentesting/0 - General/Basic Services and Useful Commands.md",
-    "Directory.md",
     "Cybersecurity/Pentesting/1 - Web/Web Enumeration.md",
     "Cybersecurity/Pentesting/1 - Web/SQLi.md",
     "Cybersecurity/Pentesting/1 - Web/Cross Site Scripting.md",
@@ -199,7 +201,6 @@
     "Cybersecurity/Pentesting/Tunnels and Portforwarding.md",
     "Cybersecurity/Pentesting/SMB-Reference.pdf",
     "Cybersecurity",
-    "Templates/General Topic Template.md",
     "Cybersecurity/Pentesting",
     "Templates"
   ]
