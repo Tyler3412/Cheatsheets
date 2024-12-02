@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheets/Cybersecurity/Pentesting/Pentesting.md",
+                "file": "Cheatsheets/Cybersecurity/Pentesting/1 - Web/Web Attacks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pentesting"
+              "title": "Web Attacks"
             }
           }
         ]
@@ -165,9 +165,9 @@
   },
   "active": "e4da198a5c541458",
   "lastOpenFiles": [
-    "Cheatsheets/Cybersecurity/Pentesting/1 - Web/Web Attacks.md",
     "Cheatsheets/Cybersecurity/Pentesting/Pentesting.md",
     "Cheatsheets/Cybersecurity/Pentesting/1 - Web/FFUF and BurpSuite.md",
+    "Cheatsheets/Cybersecurity/Pentesting/1 - Web/Web Attacks.md",
     "Cheatsheets/Cybersecurity/Pentesting/1 - Web/Server Side Attacks.md",
     "Other Common Web Attacks.md",
     "Cheatsheets/Cybersecurity/Pentesting/1 - Web/Command Injection Filters.md",
