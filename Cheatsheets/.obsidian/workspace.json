@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cybersecurity/Pentesting/0 - General/File Transfers.md",
+                "file": "Cybersecurity/Pentesting/Pentesting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "File Transfers"
+              "title": "Pentesting"
             }
           }
         ]
@@ -179,8 +179,9 @@
   },
   "active": "18756e9efbf1b72f",
   "lastOpenFiles": [
-    "Cybersecurity/Pentesting/0 - General/File Transfers.md",
+    "Cybersecurity/Pentesting/3 - Active Directory/Pasted image 20241206200007.png",
     "Cybersecurity/Pentesting/Pentesting.md",
+    "Cybersecurity/Pentesting/0 - General/File Transfers.md",
     "Cybersecurity/Pentesting/3 - Active Directory/Active Directory Attacks.md",
     "Cybersecurity/Pentesting/2 - Network/Attacking Network Protocols.md",
     "Cybersecurity/Pentesting/0 - General/Basic Services and Useful Commands.md",
@@ -214,7 +215,6 @@
     "Cybersecurity/Debuggers.md",
     "Cybersecurity/GDB.pdf",
     "Cybersecurity/Pentesting/Network Enumeration.md",
-    "Cybersecurity/Pentesting/Tunnels and Portforwarding.md",
     "Cybersecurity/Pentesting/SMB-Reference.pdf",
     "Cybersecurity",
     "Cybersecurity/Pentesting",
