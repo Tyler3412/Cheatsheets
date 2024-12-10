@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cybersecurity/Binary Exploitation.md",
+                "file": "Cybersecurity/Pentesting/3 - Active Directory/Active Directory Attacks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Binary Exploitation"
+              "title": "Active Directory Attacks"
             }
           }
         ]
@@ -165,8 +165,10 @@
   },
   "active": "18756e9efbf1b72f",
   "lastOpenFiles": [
-    "Directory.md",
+    "Cybersecurity/Pentesting/3 - Active Directory/Pasted image 20241210125811.png",
     "Cybersecurity/Pentesting/Pentesting.md",
+    "Directory.md",
+    "Cybersecurity/Binary Exploitation.md",
     "Cybersecurity/Pentesting/3 - Active Directory/Active Directory Attacks.md",
     "Cybersecurity/Pentesting/3 - Active Directory/Pasted image 20241206200007.png",
     "Cybersecurity/Pentesting/0 - General/File Transfers.md",
@@ -196,7 +198,6 @@
     "Cybersecurity/Pentesting/0 - General/Shells and Payloads.md",
     "Cybersecurity/Pentesting/2 - Network/DNS Image.png",
     "Cybersecurity/Pentesting/2 - Network/Network Enumeration.md",
-    "Cybersecurity/Binary Exploitation.md",
     "Cybersecurity/Stack_Layout.png",
     "Cybersecurity/Debuggers.md",
     "Cybersecurity/GDB.pdf",
