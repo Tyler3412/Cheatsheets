@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cybersecurity/Pentesting/3 - Active Directory/Active Directory Attacks.md",
+                "file": "Cybersecurity/Pentesting/4 - Post Exploitation/Linux Privilege Escalation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Active Directory Attacks"
+              "title": "Linux Privilege Escalation"
             }
           }
         ]
@@ -166,6 +166,9 @@
   "active": "18756e9efbf1b72f",
   "lastOpenFiles": [
     "Cybersecurity/Pentesting/Pentesting.md",
+    "Cybersecurity/Pentesting/4 - Post Exploitation/Windows Privilege Escalation.md",
+    "Cybersecurity/Pentesting/4 - Post Exploitation/Linux Privilege Escalation.md",
+    "Cybersecurity/Pentesting/1 - Web/Web Attacks.md",
     "Cybersecurity/Pentesting/3 - Active Directory/Active Directory Attacks.md",
     "Untitled.md",
     "Pasted image 20241211111815.png",
@@ -200,10 +203,7 @@
     "Attacking Network Applications.md",
     "Cybersecurity/Pentesting/0 - General/Shells and Payloads.md",
     "Cybersecurity/Pentesting/2 - Network/DNS Image.png",
-    "Cybersecurity/Pentesting/2 - Network/Network Enumeration.md",
-    "Cybersecurity/Debuggers.md",
     "Cybersecurity/GDB.pdf",
-    "Cybersecurity/Pentesting/Network Enumeration.md",
     "Cybersecurity/Pentesting/SMB-Reference.pdf",
     "Cybersecurity",
     "Cybersecurity/Pentesting",
