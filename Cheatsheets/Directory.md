@@ -12,3 +12,4 @@ Each note will be referenced by category. This repository won't always have the 
 **General Useful Stuff**
 [tmux](https://tmuxcheatsheet.com/)
 [vim](https://devhints.io/vim)
+[[Git-Cheatsheet.pdf]]
