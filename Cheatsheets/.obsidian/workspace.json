@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Binary_Exploitation/Common Tools, Useful Commands, and Boilerplate.md",
+                "file": "Binary_Exploitation/Format String Vulnerabilities.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Common Tools, Useful Commands, and Boilerplate"
+              "title": "Format String Vulnerabilities"
             }
           },
           {
@@ -181,10 +181,10 @@
   "lastOpenFiles": [
     "Binary_Exploitation/Binary Exploitation.md",
     "Binary_Exploitation/Introduction to Assembly and ELF.md",
-    "Binary_Exploitation/Buffer Overflows.md",
-    "Binary_Exploitation/Binary Exploitation (Old).md",
     "Binary_Exploitation/Format String Vulnerabilities.md",
     "Binary_Exploitation/Common Tools, Useful Commands, and Boilerplate.md",
+    "Binary_Exploitation/Buffer Overflows.md",
+    "Binary_Exploitation/Binary Exploitation (Old).md",
     "Binary_Exploitation/Random Scripts and Tools.md",
     "Binary_Exploitation/Images/x64_stack.png",
     "Binary_Exploitation/Images",
