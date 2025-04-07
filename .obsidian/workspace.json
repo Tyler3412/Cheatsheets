@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e4da198a5c541458",
+            "id": "5f95a4adc33d9bcf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheets/Binary_Exploitation/Introduction to Assembly and ELF.md",
+                "file": "Cheatsheets/Binary_Exploitation/Binary Exploitation (Old).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduction to Assembly and ELF"
+              "title": "Binary Exploitation (Old)"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -163,22 +164,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e4da198a5c541458",
+  "active": "5f95a4adc33d9bcf",
   "lastOpenFiles": [
-    "Cheatsheets/Binary_Exploitation/Binary Exploitation.md",
-    "Cheatsheets/Binary_Exploitation/Format String Vulnerabilities.md",
-    "Cheatsheets/Binary_Exploitation/Buffer Overflows.md",
-    "Cheatsheets/Binary_Exploitation/Binary Exploitation (Old).md",
     "Cheatsheets/Binary_Exploitation/Common Tools, Useful Commands, and Boilerplate.md",
-    "Cheatsheets/Binary_Exploitation/Common Tools, Useful Commands, and a List of Techniques.md",
-    "Cheatsheets/Binary_Exploitation/Introduction to Assembly and ELF.md",
-    "Cheatsheets/Directory.md",
+    "Cheatsheets/Binary_Exploitation/Binary Exploitation.md",
+    "Cheatsheets/Binary_Exploitation/Buffer Overflows.md",
     "Cheatsheets/Pentesting/Pentesting.md",
+    "Cheatsheets/Directory.md",
+    "Cheatsheets/Binary_Exploitation/Format String Vulnerabilities.md",
+    "Cheatsheets/Binary_Exploitation/Heap Exploitation.md",
+    "Cheatsheets/Pentesting/2 - Network/Attacking Network Applications.md",
+    "Cheatsheets/Binary_Exploitation/Introduction to Assembly and ELF.md",
+    "Cheatsheets/Debuggers.md",
+    "Cheatsheets/Binary_Exploitation/Binary Exploitation (Old).md",
+    "Cheatsheets/Pentesting/1 - Web/Web Attacks.md",
+    "Cheatsheets/Pentesting/3 - Active Directory/Active Directory Attacks.md",
+    "Cheatsheets/Binary_Exploitation/Common Tools, Useful Commands, and a List of Techniques.md",
     "Cheatsheets/Binary_Exploitation/Random Scripts and Tools.md",
     "Cheatsheets/Git-Cheatsheet.pdf",
     "Cheatsheets/SWTM-2088_Atlassian-Git-Cheatsheet.pdf",
-    "Cheatsheets/Pentesting/1 - Web/Web Attacks.md",
-    "Cheatsheets/Pentesting/3 - Active Directory/Active Directory Attacks.md",
     "Cheatsheets/Pentesting/0 - General/File Transfers.md",
     "Active Directory Attacks.md",
     "Cheatsheets/Cybersecurity/Pentesting/1 - Web/FFUF and BurpSuite.md",
@@ -191,14 +195,11 @@
     "Cheatsheets/Cybersecurity/Pentesting/1 - Web/File Inclusion.md",
     "Cheatsheets/Cybersecurity/Pentesting/1 - Web/File Upload.md",
     "Cheatsheets/Pentesting/1 - Web/burp_repeater_request.jpg",
-    "Cheatsheets/Pentesting/0 - General/Shells and Payloads.md",
     "Cheatsheets/Pentesting/1 - Web/ssrf_exploit_2.webp",
     "Cheatsheets/Pentesting/1 - Web/Pasted image 20241130092307.png",
     "ssrf_exploit_2.webp",
     "Cheatsheets/Pentesting/1 - Web/ssrf_identify_2.webp",
     "Cheatsheets/Pentesting/1 - Web/file_uploads_burp_fuzz_extension.jpg",
-    "Cheatsheets/Cybersecurity/Binary Exploitation.md",
-    "Cheatsheets/Pentesting/2 - Network/Attacking Network Protocols.md",
     "Cheatsheets/Pentesting/2 - Network/Pasted image 20241121095902.png",
     "Cheatsheets/Pasted image 20241121095902.png",
     "Cheatsheets/Pentesting/2 - Network/ftp_bounce_attack.webp",
